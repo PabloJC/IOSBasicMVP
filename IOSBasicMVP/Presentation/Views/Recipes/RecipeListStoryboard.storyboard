@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nc9-Iy-JPy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recetas-->
+        <scene sceneID="jWW-De-cPm">
+            <objects>
+                <viewController storyboardIdentifier="RecipeListViewController" id="cXt-C5-xG2" customClass="RecipeListViewController" customModule="IOSBasicMVP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cK0-1X-33M"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Mt-Uz-qg8"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="UAt-g0-5LW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RTP-aW-Ciw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RTP-aW-Ciw" firstAttribute="leading" secondItem="UAt-g0-5LW" secondAttribute="leading" id="9c0-Ny-DPF"/>
+                            <constraint firstAttribute="trailing" secondItem="RTP-aW-Ciw" secondAttribute="trailing" id="F95-zZ-7BK"/>
+                            <constraint firstItem="RTP-aW-Ciw" firstAttribute="bottom" secondItem="0Mt-Uz-qg8" secondAttribute="top" id="cfx-NL-iMg"/>
+                            <constraint firstItem="RTP-aW-Ciw" firstAttribute="top" secondItem="UAt-g0-5LW" secondAttribute="top" id="qo2-7I-82c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recetas" id="0J2-7p-Edo"/>
+                    <connections>
+                        <outlet property="recipeListTableView" destination="RTP-aW-Ciw" id="4O8-Q3-KGD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P1p-92-NEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1255.2" y="-1640.3298350824589"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lqs-am-AdL">
+            <objects>
+                <navigationController storyboardIdentifier="recipesNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="Nc9-Iy-JPy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bqt-R2-BUT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AA-yN-veu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2194.4000000000001" y="-1640.3298350824589"/>
+        </scene>
+    </scenes>
+</document>
